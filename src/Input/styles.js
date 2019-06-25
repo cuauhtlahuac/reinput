@@ -52,7 +52,7 @@ export const input = (props = {}, stateHeight, hasValue) => {
 
   return {
     ...styles,
-    color: hasValue ? styles.color : 'transparent',
+    color: hasValue ? styles.color : styles.color,
     ...Platform.select({
       ios: { height },
       android: {
